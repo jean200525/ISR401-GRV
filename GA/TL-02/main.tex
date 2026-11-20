@@ -1,0 +1,123 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[a4paper,top=2.5cm,bottom=2.3cm,left=2.2cm,right=2.2cm,headheight=28pt]{geometry}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=ieee]{biblatex}
+\usepackage[hidelinks]{hyperref}
+
+\addbibresource{referencias.bib}
+
+% Paleta institucional UTEQ
+\definecolor{uteqgreen}{HTML}{0B7A3B}
+\definecolor{uteqdark}{HTML}{075C2C}
+\definecolor{midblue}{HTML}{1F5C8B}
+\definecolor{rowgray}{HTML}{F2F4F3}
+\definecolor{boxbg}{HTML}{F7F9F8}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\thdr}[1]{\cellcolor{uteqgreen}\textcolor{white}{\textbf{#1}}}
+
+% Encabezado y pie de pagina
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\footnotesize UTEQ $\cdot$ Ingenier\'ia de Requerimientos (ISR-401) $\cdot$ SPA 2026--2027}
+\rhead{\footnotesize GA-TL-02 -- FORM}
+\lfoot{\footnotesize PFC: Plataforma de Ventas con Recomendaci\'on IA (Quevedo)}
+\rfoot{\footnotesize P\'agina \thepage\ de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\renewcommand{\arraystretch}{1.2}
+
+\begin{document}
+
+% ==============================================================================
+% PORTADA Y DATOS INFORMATIVOS
+% ==============================================================================
+\begin{titlepage}
+    \centering
+    \vspace*{0.6cm}
+    {\Large\textbf{\textcolor{uteqdark}{UNIVERSIDAD T\'ECNICA ESTATAL DE QUEVEDO}}}\\[0.25cm]
+    {\large Facultad de Ciencias de la Computaci\'on}\\[0.15cm]
+    {\large Carrera de Ingenier\'ia de Software}\\[0.8cm]
+
+    \textcolor{uteqgreen}{\rule{\linewidth}{1.5pt}}\\[0.5cm]
+    {\LARGE\textbf{ACTIVIDAD FORMATIVA: GA-TL-02 -- FORM}}\\[0.3cm]
+    {\Large Taller de entrevista estructurada y design thinking aplicados al PFC}\\[0.45cm]
+    \textcolor{uteqgreen}{\rule{\linewidth}{1.5pt}}\\[1.0cm]
+
+    \begin{tcolorbox}[colback=boxbg,colframe=uteqgreen,boxrule=0.8pt,arc=2mm,title={\textbf{Proyecto Fin de Curso (PFC)}}]
+        \centering
+        \textbf{Plataforma de Ventas con M\'odulo de Recomendaci\'on basado en Inteligencia Artificial para Establecimientos de Suministros El\'ectricos en Quevedo}
+    \end{tcolorbox}
+
+    \vspace{0.8cm}
+
+    \noindent\begin{tabularx}{\linewidth}{|p{0.32\linewidth}|Y|}
+        \hline
+        \thdr{Campo} & \thdr{Detalle}\\
+        \hline
+        Asignatura & Ingenier\'ia de Requerimientos (ISR-401) --- 4.\textsuperscript{o} Nivel, Paralelo B\\
+        \hline
+        \rowcolor{rowgray} Docente & Gleiston Cicer\'on Guerrero Ulloa, PhD (\texttt{gguerrero@uteq.edu.ec})\\
+        \hline
+        Unidad & Unidad 2. Elicitaci\'on y An\'alisis de Requisitos\\
+        \hline
+        \rowcolor{rowgray} Per\'iodo Acad\'emico & Segundo Per\'iodo Acad\'emico Ordinario (SPA) 2026--2027\\
+        \hline
+        Semana y cierre & Semana 4 (16 al 22 de noviembre de 2026) --- Cierre: 21 de noviembre de 2026, 23:59\\
+        \hline
+        \rowcolor{rowgray} Integrantes del equipo &
+        Gilces Carranza Jos\'e Ignacio (Guion y an\'alisis de preguntas)\\
+        & V\'elez Vinces Jostin Gustavo (Mapa de empat\'ia y definici\'on del problema)\\
+        & Espinoza Jeanpierre Robinson (Estructura \LaTeX{}, ensayo y custodia LOPDP)\\
+        \hline
+    \end{tabularx}
+
+    \vfill
+    {\normalsize Quevedo, Los R\'ios, Ecuador}\\
+    {\normalsize Noviembre de 2026}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% ==============================================================================
+% SECCION 1: CONTEXTO Y CONSENTIMIENTO INFORMADO (Integrante 3)
+% ==============================================================================
+\input{secciones/01_consentimiento}
+
+% ==============================================================================
+% SECCION 2: GUION DE ENTREVISTA ESTRUCTURADA (Integrante 1)
+% ==============================================================================
+% \input{secciones/02_guion_entrevista} % Pendiente: Integrante 1
+
+% ==============================================================================
+% SECCION 3: MAPA DE EMPATIA Y DEFINICION DEL PROBLEMA (Integrante 2)
+% ==============================================================================
+% \input{secciones/03_mapa_empatia} % Pendiente: Integrante 2
+
+% ==============================================================================
+% SECCIONES PROGRAMADAS PARA EL ENSAYO Y CIERRE (Dias 2 y 3)
+% ==============================================================================
+% \input{secciones/04_preguntas_corregidas}
+% \input{secciones/05_manifiesto_y_declaracion_ia}
+
+\newpage
+\printbibliography[title={Referencias}]
+
+\end{document}
