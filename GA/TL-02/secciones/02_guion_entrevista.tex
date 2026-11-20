@@ -1,0 +1,79 @@
+\section{Guion de entrevista estructurada (SH-01: Cajero y Vendedor de Mostrador)}
+
+\subsection{Evoluci\'on metodol\'ogica del instrumento}
+El presente guion deriva de la consolidaci\'on entre la versi\'on preliminar (\emph{Gu\'ia de preguntas para entrevista v3}) y el instrumento formal de campo (\emph{Gu\'ia Definitiva de Entrevistas y Observaci\'on en Sitio, ACTA-ELI-01}). Para atender los criterios de elicitaci\'on de la norma ISO/IEC/IEEE 29148:2018 \cite{iso29148} y las perspectivas de contexto de Pohl \cite{pohl2025}, se aplicaron tres mejoras concretas sobre la versi\'on v3:
+
+\begin{enumerate}[leftmargin=18pt,itemsep=2pt]
+    \item \textbf{Segmentaci\'on por parte interesada:} La versi\'on v3 agrupaba 29 preguntas en una lista continua que mezclaba tareas de mostrador con decisiones administrativas (pedidos a proveedores, estacionalidad de compras y pol\'iticas de stock). Se aislaron \'unicamente las preguntas pertinentes al perfil \textbf{SH-01 (Cajero / Vendedor de Mostrador)}.
+    \item \textbf{Incorporaci\'on del contexto operativo de Quevedo:} Se a\~nadieron preguntas sobre ergonom\'ia f\'isica del mostrador (uso de teclado y lector frente al rat\'on), jerga el\'ectrica coloquial local (\emph{breaker}, \emph{taipe}, \emph{boquilla}, \emph{contactora}, \emph{manguera}) y contingencias por intermitencia de internet o ca\'idas del SRI.
+    \item \textbf{Formalizaci\'on de estructura y acotaci\'on:} Se integraron el protocolo real de apertura con consentimiento informado y el cierre estructurado del artefacto \texttt{ACTA-ELI-01}, sintetizando el cuestionario en \textbf{15 preguntas estructuradas} organizadas en cuatro bloques tem\'aticos para el ensayo controlado de \texttt{GA-TL-02}.
+\end{enumerate}
+
+\subsection{Ficha de control del instrumento}
+\noindent\begin{tabularx}{\linewidth}{|p{0.28\linewidth}|Y|p{0.24\linewidth}|Y|}
+\hline
+\thdr{C\'odigo de acta} & \texttt{ACTA-ELI-CAJ-01} & \thdr{Duraci\'on estimada} & 30 a 45 minutos\\
+\hline
+\textbf{Parte interesada} & Cajero / Vendedor (SH-01) & \textbf{Tipo de entrevista} & Estructurada (15 preguntas)\\
+\hline
+\rowcolor{rowgray} \textbf{Nivel electrot\'ecnico} & [ \ ] Emp\'irico [ \ ] T\'ecnico [ \ ] Ninguno & \textbf{Autoriza audio} & [ \ ] S\'i \quad [ \ ] No\\
+\hline
+\end{tabularx}
+
+\subsection{Guion de apertura y consentimiento verbal}
+\begin{tcolorbox}[colback=boxbg,colframe=uteqgreen,boxrule=0.7pt,arc=1.5mm,breakable]
+\emph{``Buenos d\'ias/tardes. Mi nombre es Gilces Carranza Jos\'e Ignacio, estudiante de Ingenier\'ia de Software de la Universidad T\'ecnica Estatal de Quevedo. Estamos desarrollando un proyecto acad\'emico sobre una Plataforma de Ventas con asistencia inteligente para negocios de materiales el\'ectricos en Quevedo. El objetivo es comprender c\'omo trabajan actualmente en su d\'ia a d\'ia, qu\'e problemas enfrentan y qu\'e caracter\'isticas har\'ian realmente \'util una herramienta as\'i. Su participaci\'on es voluntaria, puede no responder alguna pregunta o terminar la entrevista cuando lo desee. No hay respuestas correctas o incorrectas, y la informaci\'on se usar\'a estrictamente con fines acad\'emicos manteniendo el anonimato del local y del personal. ¿Acepta participar y me permite grabar la conversaci\'on para no perder detalles t\'ecnicos?''}
+\end{tcolorbox}
+
+\subsection{Bloques tem\'aticos de preguntas (15 preguntas)}
+
+\subsubsection*{Bloque 1: Perfil operativo, rutina y ergonom\'ia en mostrador (Perspectiva de uso y f\'isica)}
+\begin{enumerate}[label=\textbf{P\arabic*.},leftmargin=26pt,itemsep=3pt]
+    \item ¿Cu\'ales son sus responsabilidades exactas durante el turno (cobrar, despachar, acomodar perchas o revisar inventario) desde que abre hasta que cierra?\\
+    {\footnotesize\textit{Objetivo anal\'itico:} Medir la dispersi\'on de atenci\'on del cajero y las interrupciones mientras opera en caja.}
+    \item Descr\'ibame paso a paso qu\'e ocurre desde que un cliente llega al mostrador hasta que se retira con su compra y comprobante.\\
+    {\footnotesize\textit{Objetivo anal\'itico:} Mapear el flujo actual (\emph{As-Is}) e identificar tiempos muertos entre atenci\'on, b\'usqueda en bodega y cobro.}
+    \item ¿En qu\'e horarios del d\'ia se concentran las mayores filas, cu\'antos clientes llegan a esperar y qu\'e pasos le toman m\'as tiempo en horas pico?\\
+    {\footnotesize\textit{Objetivo anal\'itico:} Identificar picos de estr\'es operativo y cuellos de botella cr\'iticos.}
+    \item ¿C\'omo localiza un producto en el sistema y en bodega, y qu\'e tan frecuente es que el sistema indique existencias pero f\'isicamente est\'e agotado?\\
+    {\footnotesize\textit{Objetivo anal\'itico:} Verificar el uso de perif\'ericos (lector de c\'odigo de barras, teclado), ergonom\'ia del mostrador y desfases de inventario.}
+\end{enumerate}
+
+\subsubsection*{Bloque 2: Herramienta actual, lenguaje local y perfil de clientes (Perspectiva de sociedad y lenguaje)}
+\begin{enumerate}[label=\textbf{P\arabic*.},resume,leftmargin=26pt,itemsep=3pt]
+    \item ¿Qu\'e herramienta usan hoy para registrar ventas y emitir facturas, qu\'e le genera mayor fatiga durante el cobro y qu\'e pas\'o la \'ultima vez que una venta se complic\'o?\\
+    {\footnotesize\textit{Objetivo anal\'itico:} Detectar deficiencias de usabilidad e incidentes cr\'iticos por errores de digitaci\'on o lentitud.}
+    \item ¿Qui\'enes son sus clientes m\'as frecuentes (maestros electricistas, contratistas, particulares, empresas) y c\'omo cambia su forma de atender a cada perfil?\\
+    {\footnotesize\textit{Objetivo anal\'itico:} Calibrar el nivel t\'ecnico requerido en la atenci\'on seg\'un el tipo de comprador.}
+    \item ¿Con qu\'e t\'erminos coloquiales o ``nombres de calle'' piden los materiales en Quevedo (por ejemplo, \emph{breaker}, \emph{taipe}, \emph{boquilla}, \emph{contactora}, \emph{manguera}) y cu\'ales generan mayor confusi\'on?\\
+    {\footnotesize\textit{Objetivo anal\'itico:} Alimentar el diccionario de sin\'onimos del dominio para el buscador y el m\'odulo de recomendaci\'on.}
+\end{enumerate}
+
+\subsubsection*{Bloque 3: Heur\'istica de asesor\'ia t\'ecnica, sustitutos y venta cruzada (L\'ogica del m\'odulo IA)}
+\begin{enumerate}[label=\textbf{P\arabic*.},resume,leftmargin=26pt,itemsep=3pt]
+    \item ¿Hay clientes que buscan siempre a un vendedor espec\'ifico para que los asesore y por qu\'e cree que ocurre eso?\\
+    {\footnotesize\textit{Objetivo anal\'itico:} Detectar conocimiento t\'acito concentrado en vendedores con mayor experiencia.}
+    \item ¿Con qu\'e frecuencia los clientes le piden consejo sobre calibres de cable, amperajes de \emph{breaker}, voltajes o compatibilidad antes de comprar?\\
+    {\footnotesize\textit{Objetivo anal\'itico:} Cuantificar la demanda real de asesor\'ia t\'ecnica en mostrador.}
+    \item Cuando un cliente solicita una recomendaci\'on para una instalaci\'on residencial o industrial, ¿qu\'e datos le pide usted antes de sugerirle un producto?\\
+    {\footnotesize\textit{Objetivo anal\'itico:} Elicitar las variables de diagn\'ostico de entrada para el asistente de recomendaci\'on.}
+    \item Cuando el producto solicitado est\'a agotado, ¿en qu\'e criterios t\'ecnicos se basa para ofrecer un sustituto sin arriesgarse a provocar un cortocircuito o un reclamo?\\
+    {\footnotesize\textit{Objetivo anal\'itico:} Extraer reglas de equivalencia t\'ecnica (tensi\'on, corriente, curva, dimensiones y marca).}
+    \item ¿Suele ofrecer productos complementarios (cinta aislante, cajas t\'ermicas, terminales) y c\'omo sabe cu\'ales sugerir en cada compra?\\
+    {\footnotesize\textit{Objetivo anal\'itico:} Definir reglas de asociaci\'on para venta cruzada y reducci\'on de compras incompletas.}
+\end{enumerate}
+
+\subsubsection*{Bloque 4: Aprendizaje, interfaz de apoyo y contingencias de red (Perspectiva t\'ecnica y TI)}
+\begin{enumerate}[label=\textbf{P\arabic*.},resume,leftmargin=26pt,itemsep=3pt]
+    \item ¿Cu\'anto tiempo le toma a un vendedor nuevo dominar las equivalencias del cat\'alogo y a qui\'en o a qu\'e recurre usted cuando tiene dudas de compatibilidad?\\
+    {\footnotesize\textit{Objetivo anal\'itico:} Medir la curva de aprendizaje y el tiempo invertido en consultas manuales.}
+    \item Si el sistema mostrara sugerencias de sustitutos o complementos al vender, ¿en qu\'e momento le resultar\'ia \'util verlas y qu\'e datos necesita en pantalla para confiar en esa recomendaci\'on?\\
+    {\footnotesize\textit{Objetivo anal\'itico:} Definir el punto de interacci\'on en caja y los atributos de explicabilidad (precio, stock, especificaciones y motivo).}
+    \item ¿Con qu\'e frecuencia falla el internet o se satura el servicio del SRI durante la semana y qu\'e procedimiento siguen en ese instante para no detener el cobro?\\
+    {\footnotesize\textit{Objetivo anal\'itico:} Fundamentar los requisitos de contingencia, operaci\'on sin conexi\'on y degradaci\'on controlada.}
+\end{enumerate}
+
+\subsection{Guion de cierre}
+\begin{tcolorbox}[colback=boxbg,colframe=uteqgreen,boxrule=0.7pt,arc=1.5mm,breakable]
+\emph{``Muchas gracias por su tiempo y por compartir su experiencia con nosotros. Toda esta informaci\'on nos ayudar\'a a dise\~nar una soluci\'on ajustada a la realidad de los locales el\'ectricos de Quevedo. ¿Nos permitir\'ia contactarle m\'as adelante para mostrarle un prototipo inicial y validar su funcionamiento?''}
+\end{tcolorbox}
