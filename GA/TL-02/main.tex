@@ -4,6 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[spanish,es-tabla]{babel}
 \usepackage[a4paper,top=2.5cm,bottom=2.3cm,left=2.2cm,right=2.2cm,headheight=28pt]{geometry}
+\usepackage{microtype}
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{booktabs}
@@ -42,6 +43,7 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{5pt}
 \renewcommand{\arraystretch}{1.2}
+\emergencystretch=1.5em
 
 \begin{document}
 
@@ -97,28 +99,12 @@
 \newpage
 
 % ==============================================================================
-% SECCION 1: CONTEXTO Y CONSENTIMIENTO INFORMADO (Integrante 3)
+% SECCIONES DEL INFORME
 % ==============================================================================
 \input{secciones/01_consentimiento}
-
-% ==============================================================================
-% SECCION 2: GUION DE ENTREVISTA ESTRUCTURADA (Integrante 1)
-% ==============================================================================
 \input{secciones/02_guion_entrevista}
-
-% ==============================================================================
-% SECCION 3: MAPA DE EMPATIA Y DEFINICION DEL PROBLEMA (Integrante 2)
-% ==============================================================================
 \input{secciones/03_mapa_empatia}
-
-% ==============================================================================
-% SECCION 4: ANALISIS Y CORRECCION DE PREGUNTAS DEFECTUOSAS (Integrante 1)
-% ==============================================================================
 \input{secciones/04_preguntas_corregidas}
-
-% ==============================================================================
-% SECCION 5: REGISTRO DE EVIDENCIAS Y DECLARACION DE IA (Integrante 3)
-% ==============================================================================
 \input{secciones/05_manifiesto_y_declaracion_ia}
 
 \newpage
